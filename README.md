@@ -1,13 +1,13 @@
-# Histogram Web Application
+# Regression Web Application
 
 ## Description
-This project is a simple web application built with Shiny for Python, allowing users to upload a CSV file, select a specific column, and visualize the data in a histogram. The application provides an interactive interface to choose the column and adjust the number of histogram bins.
+This is a Shiny web application in Python that enables users to upload a CSV file, select X and Y columns, and run polynomial regression analysis with adjustable regression order. The results are displayed in a table and a 2D regression plot.
 
 ## Features
-- Upload a CSV file with the dataset.
-- Select a column from the uploaded CSV to visualize.
-- Adjust the number of bins in the histogram.
-- View data in a tabular format alongside the histogram plot.
+- Upload a CSV file containing the dataset.
+- Select `X` and `Y` columns from the CSV for regression analysis.
+- Adjust the polynomial regression order (1 to 5).
+- View data in a tabular format and plot the 2D regression results.
 
 ## Installation
 
@@ -23,17 +23,17 @@ This project is a simple web application built with Shiny for Python, allowing u
 ## Usage
 1. **Run the Application**: Start the Shiny application by executing:
    ```bash
-   shiny run --reload --launch-browser app_hist.py
+   shiny run --reload --launch-browser app_regression.py
 
 2. **Interacting with the App**:
 
-- Upload a CSV file using the "Choose CSV File" option.
-- Select the column to visualize from the dropdown menu.
-- Choose the desired number of bins for the histogram.
-- View the table data and histogram plot in the respective tabs.   
+- Upload a CSV file with data.
+- Choose the `X` and `Y` columns to use for the regression.
+- Select the polynomial order for regression.
+- View the table of data and the regression plot in the respective tabs.  
 
 ## File Structure
-- `app_hist.py` : Main application file containing the web app code.
+- `app_regression.py` : Main application file containing the web app code.
 
 ## Dependencies
 - `pandas`
@@ -41,6 +41,7 @@ This project is a simple web application built with Shiny for Python, allowing u
 - `shiny`
 - `shinywidgets`
 - `matplotlib`
+- `seaborn`
 
 This README provides a basic overview of the project, instructions for setup and use, and other relevant information. Let me know if there’s anything specific you’d like to add or modify. Feel free to contribute or reach out if you have any questions!
 
